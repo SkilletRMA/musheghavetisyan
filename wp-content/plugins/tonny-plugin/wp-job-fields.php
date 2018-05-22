@@ -62,15 +62,7 @@ function event_media_save_meta_box($post_id) {
         update_post_meta( $post_id, 'event-media-field-name', $contents );
     }
 };
-?>
 
-
-
-
-
-
-
-<?php
 add_action('admin_init', 'prfx_add_meta_box', 1);
 function prfx_add_meta_box() {
 
@@ -134,16 +126,3 @@ function prfx_save_meta_box($post_id) {
         update_post_meta( $post_id, 'my-first-field-name', $contents );
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
