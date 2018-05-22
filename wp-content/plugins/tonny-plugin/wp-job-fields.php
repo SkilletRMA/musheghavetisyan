@@ -114,6 +114,7 @@ function prfx_save_meta_box($post_id) {
     if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
         return;
 
+
     // check if user has rights
     if (!current_user_can('edit_post', $post_id))
         return;
